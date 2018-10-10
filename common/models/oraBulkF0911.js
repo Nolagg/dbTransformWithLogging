@@ -2,11 +2,11 @@
 
 const copyData = require('../../server/apiWorld/apiFunctions.js').copyData;
 
-module.exports=function(oraArcF0911) {
+module.exports=function(oraBulkF0911) {
         // this is the implementation of the remote method
-        oraArcF0911.moveData = function(targetApi,chunkSize, cb) {
+        oraBulkF0911.moveData = function(targetApi,chunkSize, cb) {
             console.log('my target Api is ' + targetApi + ' and the chunkSize I will be using is ' + chunkSize);
-            copyData('oraArcF0911', targetApi, chunkSize)
+            copyData('oraBulkF0911', targetApi, chunkSize)
             .then(jsonData => {
               console.log('back from copyData');
               for (var i = 0; i < jsonData.length; i++) {
@@ -18,7 +18,7 @@ module.exports=function(oraArcF0911) {
     
         };
         // this is the definition of the remote method
-        oraArcF0911.remoteMethod('moveData', {
+        oraBulkF0911.remoteMethod('moveData', {
             description: "Moves all data from one api endpoint to another api endpoint",
             accepts: [{arg: "targetAPI", 
                        description: "The name of the API where the data will be moved to",

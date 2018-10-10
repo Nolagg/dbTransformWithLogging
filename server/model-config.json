@@ -40,6 +40,10 @@
     "dataSource": "oracleDS",
     "public": true
   },
+  "oraBulkF0911": {
+    "dataSource": "oracleDS",
+    "public": true
+  },
   "oraArcF0911": {
     "dataSource": "oracleDS",
     "public": true
