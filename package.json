@@ -11,6 +11,7 @@
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
+    "app-root-path": "^2.1.0",
     "axios": "^0.18.0",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
@@ -25,7 +26,10 @@
     "oracledb": "^2.1.2",
     "prompt": "^1.0.0",
     "serve-favicon": "^2.0.1",
-    "strong-error-handler": "^2.0.0"
+    "strong-error-handler": "^2.0.0",
+    "throttled-queue": "^1.0.5",
+    "winston": "^3.1.0",
+    "winston-daily-rotate-file": "^3.3.3"
   },
   "devDependencies": {
     "eslint": "^3.17.1",

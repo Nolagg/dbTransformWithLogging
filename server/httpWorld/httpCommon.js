@@ -15,7 +15,18 @@ const myLoopback = axios.create({
   //   'User-Agent': 'Chrome/59.0.3071.115',
   //   'content-type': 'application/json;charset=UTF-8',
     'keep-alive': 'false'},
-  responseType: 'json'});
+  responseType: 'json',
+  // transformResponse: [function (data) {
+  //   var jsonData = JSON.parse(data);
+    // console.log(data.error.details.03.stack);
+    // for (var key in jsonData) {
+    //   if (jsonData.hasOwnProperty(key)) {
+    //     console.log(key + "1 -> " + jsonData[key]);
+    //   }
+    // }
+    // return JSON.parse(data);
+    // }]
+});
 
 module.exports = {
   myLoopback: myLoopback};
