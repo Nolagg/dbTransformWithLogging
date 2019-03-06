@@ -84,8 +84,12 @@
     "dataSource": "oracleDS",
     "public": false
   },
-  "mongo2F0911": {
-    "dataSource": "MongoDB",
-    "public": false
-  }  
+  "EMP": {
+    "dataSource": "oracleDS",
+    "public": true
+  },
+  "EMP2": {
+    "dataSource": "oracleDS",
+    "public": true
+  }    
 }

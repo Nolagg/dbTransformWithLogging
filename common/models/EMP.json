@@ -1,0 +1,59 @@
+{
+  "name": "EMP",
+  "options": {
+    "idInjection": false,
+    "plural": "EMP",
+    "oracle": {
+      "schema": "hr",
+      "table": "EMP"
+    }
+  },
+  "properties": {
+    "EMP_ID": {
+      "type": "Number",
+      "required": true,
+      "length": 22,
+      "precision": 10,
+      "scale": 0,
+      "id": 1,
+      "oracle": {
+        "columnName": "EMP_ID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "FNAME": {
+      "type": "String",
+      "required": false,
+      "length": 25,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "FNAME",
+        "dataType": "VARCHAR2",
+        "dataLength": 25,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "LNAME": {
+      "type": "String",
+      "required": false,
+      "length": 25,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "LNAME",
+        "dataType": "VARCHAR2",
+        "dataLength": 25,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    }
+  }
+}
